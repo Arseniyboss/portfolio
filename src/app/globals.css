@@ -5,11 +5,24 @@
 }
 
 :root {
-  --gray: #555;
-  --box-shadow: 0 0 0.25rem darkgrey;
-  --header-z-index: 1;
+  --background: #101522;
+  --radius: 0.25rem;
+  --header-height: 80px;
 }
 
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: var(--background);
 }

@@ -2,7 +2,9 @@ import './globals.css'
 import { ReactNode } from 'react'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Container } from '@styles/globals'
 import StyledComponentsRegistry from '@lib/registry'
+import Header from '@components/header/Header'
 
 type Props = {
   children: ReactNode
@@ -13,6 +15,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'Portfolio website build with NextJS',
+  themeColor: 'black',
 }
 
 const RootLayout = ({ children }: Props) => {
@@ -20,7 +23,8 @@ const RootLayout = ({ children }: Props) => {
     <html lang='en'>
       <body className={inter.className}>
         <StyledComponentsRegistry>
-          <main>{children}</main>
+          <Header />
+          <Container>{children}</Container>
         </StyledComponentsRegistry>
       </body>
     </html>

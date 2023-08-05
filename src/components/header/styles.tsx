@@ -1,22 +1,55 @@
-'use client'
-
 import styled from 'styled-components'
+import { breakpoints } from '@breakpoints'
+
+type Props = {
+  $isMobileNavOpen: boolean
+}
 
 export const HeaderContainer = styled.header`
-  background: white;
+  background: var(--background);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  padding: 1.5rem 2rem;
-  box-shadow: var(--box-shadow);
-  color: var(--gray);
-  z-index: var(--header-z-index);
+  padding: 0 2rem;
+  box-shadow: 0px 0px var(--radius) rgba(0, 0, 0, 1);
+  height: var(--header-height);
 `
 
-export const NavLinks = styled.ul`
+export const HeaderLogo = styled.h1`
+  font-weight: normal;
+`
+
+export const HeaderIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: ${breakpoints.header}) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`
+
+export const NavLinks = styled.ul<Props>`
   display: flex;
-  /* align-items: center; */
   gap: 1.5rem;
+  font-size: 1.2rem;
+
+  @media screen and (max-width: ${breakpoints.header}) {
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    height: calc(100vh - (var(--header-height) + var(--radius)));
+    top: calc(var(--header-height) + var(--radius));
+    background: var(--background);
+    opacity: ${({ $isMobileNavOpen }) => ($isMobileNavOpen ? 1 : 0)};
+  }
 `

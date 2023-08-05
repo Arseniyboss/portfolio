@@ -22,7 +22,6 @@ Portfolio website build with NextJS
 
 ## Sections
 
-- About
+- Home
 - Skills
 - Projects
-- Contact
