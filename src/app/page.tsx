@@ -1,10 +1,12 @@
-import { Heading } from './styles'
+import Header from '@components/header/Header'
+import About from '@components/about/About'
 
 const Home = () => {
   return (
-    <main>
-      <Heading>Hello World</Heading>
-    </main>
+    <>
+      <Header />
+      <About />
+    </>
   )
 }
 

@@ -19,7 +19,9 @@ const RootLayout = ({ children }: Props) => {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <main>{children}</main>
+        </StyledComponentsRegistry>
       </body>
     </html>
   )
