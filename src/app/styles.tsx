@@ -38,7 +38,7 @@ export const Button = styled.button`
   color: white;
   font-size: 1.2rem;
   padding: 0.8rem 4rem;
-  border-radius: var(--radius);
+  border-radius: var(--border-radius);
   transition: all 0.3s ease;
   outline: none;
 

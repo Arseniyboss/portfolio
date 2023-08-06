@@ -6,7 +6,7 @@ type Props = {
   $isMobileNavOpen: boolean
 }
 
-export const HeaderContainer = styled.header`
+export const Container = styled.header`
   background: var(--background);
   display: flex;
   justify-content: space-between;
@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
   position: sticky;
   top: 0;
   padding: 0 var(--spacing);
-  box-shadow: 0px 0px var(--radius) rgba(0, 0, 0, 1);
+  box-shadow: var(--box-shadow);
   height: var(--header-height);
   z-index: 1;
 `
@@ -49,8 +49,8 @@ export const NavLinks = styled.ul<Props>`
     gap: 2rem;
     padding-top: 1.5rem;
     width: 100%;
-    height: calc(100vh - (var(--header-height) + var(--radius)));
-    top: calc(var(--header-height) + var(--radius));
+    height: calc(100vh - (var(--header-height) + var(--blur-radius)));
+    top: calc(var(--header-height) + var(--blur-radius));
     background: var(--background);
     display: ${({ $isMobileNavOpen }) => !$isMobileNavOpen && 'none'};
   }

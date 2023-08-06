@@ -1,20 +1,14 @@
 import Link from 'next/link'
-import { Container, ProjectImage, ProjectFooter } from './styles'
-
-type Props = {
-  img: string
-  url: string
-  name: string
-}
+import { Project as Props } from '@types'
+import { CardImage } from '@styles/card'
+import { Container, ProjectName } from './styles'
 
 const Project = ({ img, url, name }: Props) => {
   return (
     <Link href={url} target='_blank'>
       <Container>
-        <ProjectImage src={img} alt='' width={700} height={400} priority />
-        <ProjectFooter>
-          <p>{name}</p>
-        </ProjectFooter>
+        <CardImage src={img} alt='' width={700} height={400} priority />
+        <ProjectName>{name}</ProjectName>
       </Container>
     </Link>
   )

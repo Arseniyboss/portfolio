@@ -1,11 +1,9 @@
 'use client'
 
 import styled from 'styled-components'
-import Image from 'next/image'
+import { CardContainer, CardName } from '@styles/card'
 
-export const Container = styled.article`
-  border-radius: var(--radius);
-  overflow: hidden;
+export const Container = styled(CardContainer)`
   transition: 0.5s;
 
   &:hover {
@@ -13,17 +11,7 @@ export const Container = styled.article`
   }
 `
 
-export const ProjectImage = styled(Image)`
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1.75 / 1;
-`
-
-export const ProjectFooter = styled.div`
+export const ProjectName = styled(CardName)`
   background: white;
   color: #4e7093;
-  text-align: center;
-  text-transform: capitalize;
-  font-weight: bold;
-  padding: 1rem;
 `

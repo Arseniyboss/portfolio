@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { Heading } from '@styles/globals'
-import { Container } from './styles'
+import { Container } from '@styles/card'
 import Project from '@components/project/Project'
 import projects from '@data/projects'
 

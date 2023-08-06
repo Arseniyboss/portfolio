@@ -4,12 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { setBodyOverflow } from '@utils/setBodyOverflow'
-import {
-  HeaderContainer,
-  HeaderLogo,
-  HeaderIconContainer,
-  NavLinks,
-} from './styles'
+import { Container, HeaderLogo, HeaderIconContainer, NavLinks } from './styles'
 
 const Header = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
@@ -25,7 +20,7 @@ const Header = () => {
   }
 
   return (
-    <HeaderContainer>
+    <Container>
       <HeaderLogo>Arseniy</HeaderLogo>
       <HeaderIconContainer
         onClick={isMobileNavOpen ? closeMobileNav : openMobileNav}
@@ -51,7 +46,7 @@ const Header = () => {
           </li>
         </NavLinks>
       </nav>
-    </HeaderContainer>
+    </Container>
   )
 }
 
