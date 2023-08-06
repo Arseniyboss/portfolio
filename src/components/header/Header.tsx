@@ -21,7 +21,11 @@ const Header = () => {
 
   return (
     <Container>
-      <HeaderLogo>Arseniy</HeaderLogo>
+      <HeaderLogo>
+        <Link href='/' onClick={closeMobileNav}>
+          Arseniy
+        </Link>
+      </HeaderLogo>
       <HeaderIconContainer
         onClick={isMobileNavOpen ? closeMobileNav : openMobileNav}
       >
