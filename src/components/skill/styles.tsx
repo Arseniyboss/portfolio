@@ -9,6 +9,7 @@ export const Container = styled(CardContainer)`
 
 export const SkillImage = styled(CardImage)`
   margin-top: 1rem;
+  aspect-ratio: 1.8;
 `
 
 export const SkillName = styled(CardName)`
