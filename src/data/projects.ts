@@ -9,7 +9,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    img: '/projects/food.svg',
+    img: '/projects/food.png',
     url: 'https://github.com/Arseniyboss/food',
     name: 'Food Delivery App',
   },

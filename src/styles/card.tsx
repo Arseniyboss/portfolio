@@ -18,7 +18,7 @@ export const CardContainer = styled.article`
 export const CardImage = styled(Image)`
   height: auto;
   width: 100%;
-  aspect-ratio: 1.75 / 1;
+  aspect-ratio: 1.85;
 `
 
 export const CardName = styled.p`
