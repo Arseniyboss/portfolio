@@ -16,6 +16,7 @@ export const HeaderContainer = styled.header`
   padding: 0 var(--spacing);
   box-shadow: 0px 0px var(--radius) rgba(0, 0, 0, 1);
   height: var(--header-height);
+  z-index: 1;
 `
 
 export const HeaderLogo = styled.h1`
