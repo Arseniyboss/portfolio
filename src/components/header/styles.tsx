@@ -26,7 +26,7 @@ export const HeaderLogo = styled.h1`
 export const HeaderIconContainer = styled(InvisibleButton)`
   display: none;
 
-  @media screen and (max-width: ${breakpoints.header}) {
+  @media screen and (max-width: ${breakpoints.mobileNav}) {
     position: absolute;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ export const NavLinks = styled.ul<Props>`
   gap: 1.5rem;
   font-size: 1.2rem;
 
-  @media screen and (max-width: ${breakpoints.header}) {
+  @media screen and (max-width: ${breakpoints.mobileNav}) {
     text-align: center;
     flex-direction: column;
     position: absolute;

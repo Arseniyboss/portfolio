@@ -24,27 +24,42 @@ const skills: Skill[] = [
   {
     id: 5,
     img: '/skills/react.svg',
-    name: 'React',
+    name: 'ReactJS',
   },
   {
     id: 6,
-    img: '/skills/next.svg',
-    name: 'Next',
+    img: '/skills/react.svg',
+    name: 'React Native',
   },
   {
     id: 7,
-    img: '/skills/node.svg',
-    name: 'Node',
+    img: '/skills/next.svg',
+    name: 'NextJS',
   },
   {
     id: 8,
+    img: '/skills/node.svg',
+    name: 'NodeJS',
+  },
+  {
+    id: 9,
+    img: '/skills/mongo.svg',
+    name: 'MongoDB',
+  },
+  {
+    id: 10,
     img: '/skills/jest.svg',
     name: 'Jest',
   },
   {
-    id: 9,
+    id: 11,
     img: '/skills/cypress.svg',
     name: 'Cypress',
+  },
+  {
+    id: 12,
+    img: '/skills/git.svg',
+    name: 'Git',
   },
 ]
 

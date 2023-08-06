@@ -23,7 +23,6 @@ export const CardImage = styled(Image)`
 
 export const CardName = styled.p`
   text-align: center;
-  text-transform: capitalize;
   font-weight: bold;
   padding: 1rem;
 `
