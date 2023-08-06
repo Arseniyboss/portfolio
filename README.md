@@ -20,7 +20,7 @@ Portfolio website build with NextJS
 | npm run compile       | detects typescript errors               |
 | npm run update:latest | updates dependencies to latest versions |
 
-## Sections
+## Pages
 
 - Home
 - Skills
