@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { breakpoints } from '@breakpoints'
+import { InvisibleButton } from '@styles/globals'
 
 type Props = {
   $isMobileNavOpen: boolean
@@ -12,7 +13,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   position: sticky;
   top: 0;
-  padding: 0 2rem;
+  padding: 0 var(--spacing);
   box-shadow: 0px 0px var(--radius) rgba(0, 0, 0, 1);
   height: var(--header-height);
 `
@@ -21,14 +22,14 @@ export const HeaderLogo = styled.h1`
   font-weight: normal;
 `
 
-export const HeaderIcon = styled.div`
+export const HeaderIconContainer = styled(InvisibleButton)`
   display: none;
 
   @media screen and (max-width: ${breakpoints.header}) {
     position: absolute;
     display: flex;
     align-items: center;
-    right: 2rem;
+    right: var(--spacing);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -50,6 +51,6 @@ export const NavLinks = styled.ul<Props>`
     height: calc(100vh - (var(--header-height) + var(--radius)));
     top: calc(var(--header-height) + var(--radius));
     background: var(--background);
-    opacity: ${({ $isMobileNavOpen }) => ($isMobileNavOpen ? 1 : 0)};
+    display: ${({ $isMobileNavOpen }) => !$isMobileNavOpen && 'none'};
   }
 `

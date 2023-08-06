@@ -14,8 +14,9 @@ export const Container = styled.div`
   @media screen and (max-width: ${breakpoints.about}) {
     flex: initial;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+    gap: var(--spacing);
+    padding: var(--spacing);
+    padding-bottom: 0;
   }
 `
 
@@ -37,14 +38,12 @@ export const Button = styled.button`
   color: white;
   font-size: 1.2rem;
   padding: 0.8rem 4rem;
-  border-radius: 0.25rem;
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
   outline: none;
-  border: none;
-  cursor: pointer;
 
   &:hover {
     --lightness: 50%;
-    transition: all 0.3s ease;
   }
 
   @media screen and (max-width: ${breakpoints.about}) {
