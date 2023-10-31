@@ -7,32 +7,34 @@ import { setBodyOverflow } from '@utils/setBodyOverflow'
 import { Container, HeaderLogo, HeaderIconContainer, NavLinks } from './styles'
 
 const Header = () => {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
+  const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false)
 
   const openMobileNav = () => {
-    setIsMobileNavOpen(true)
+    setIsMobileNavbarOpen(true)
     setBodyOverflow('hidden')
   }
 
   const closeMobileNav = () => {
-    setIsMobileNavOpen(false)
+    setIsMobileNavbarOpen(false)
     setBodyOverflow('auto')
   }
 
   return (
     <Container>
-      <HeaderLogo>
-        <Link href='/' onClick={closeMobileNav}>
-          Arseniy
-        </Link>
-      </HeaderLogo>
+      <HeaderLogo>Arseniy</HeaderLogo>
       <HeaderIconContainer
-        onClick={isMobileNavOpen ? closeMobileNav : openMobileNav}
+        onClick={isMobileNavbarOpen ? closeMobileNav : openMobileNav}
+        aria-expanded={isMobileNavbarOpen}
+        aria-label={
+          isMobileNavbarOpen
+            ? 'close mobile navigation'
+            : 'open mobile navigation'
+        }
       >
-        {isMobileNavOpen ? <FaTimes /> : <FaBars />}
+        {isMobileNavbarOpen ? <FaTimes /> : <FaBars />}
       </HeaderIconContainer>
       <nav>
-        <NavLinks $isMobileNavOpen={isMobileNavOpen}>
+        <NavLinks $isMobileNavbarOpen={isMobileNavbarOpen}>
           <li>
             <Link href='/' onClick={closeMobileNav}>
               Home

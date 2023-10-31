@@ -20,30 +20,35 @@ export const Container = styled.div`
   }
 `
 
-export const InfoSection = styled.div`
+export const InfoSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
   max-width: 500px;
 
-  @media screen and (max-width: ${breakpoints.about}) {
-    align-items: initial;
+  h1 {
+    font-size: 2rem;
+  }
+
+  p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 `
 
 export const Button = styled.button`
-  --lightness: 55%;
-  background: hsl(235, 91%, var(--lightness));
+  --lightness: 40%;
+  background: hsl(240, 100%, var(--lightness));
   color: white;
+  text-align: center;
   font-size: 1.2rem;
   padding: 0.8rem 4rem;
   border-radius: var(--border-radius);
   transition: all 0.3s ease;
-  outline: none;
 
   &:hover {
-    --lightness: 50%;
+    --lightness: 35%;
   }
 
   @media screen and (max-width: ${breakpoints.about}) {

@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <>
       <Heading>Projects</Heading>
-      <Container>
+      <Container aria-label='projects'>
         {projects.map((project) => (
           <Project key={project.id} {...project} />
         ))}

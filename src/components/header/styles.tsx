@@ -3,7 +3,7 @@ import { breakpoints } from '@breakpoints'
 import { InvisibleButton } from '@styles/globals'
 
 type Props = {
-  $isMobileNavOpen: boolean
+  $isMobileNavbarOpen: boolean
 }
 
 export const Container = styled.header`
@@ -19,8 +19,8 @@ export const Container = styled.header`
   z-index: 1;
 `
 
-export const HeaderLogo = styled.h1`
-  font-weight: normal;
+export const HeaderLogo = styled.p`
+  font-size: 2rem;
 `
 
 export const HeaderIconContainer = styled(InvisibleButton)`
@@ -52,6 +52,6 @@ export const NavLinks = styled.ul<Props>`
     height: calc(100vh - (var(--header-height) + var(--blur-radius)));
     top: calc(var(--header-height) + var(--blur-radius));
     background: var(--background);
-    display: ${({ $isMobileNavOpen }) => !$isMobileNavOpen && 'none'};
+    display: ${({ $isMobileNavbarOpen }) => !$isMobileNavbarOpen && 'none'};
   }
 `

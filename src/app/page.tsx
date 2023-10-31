@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 const Home = () => {
   return (
     <Container>
-      <InfoSection>
+      <InfoSection aria-label='info section'>
         <h1>Hi! I am Arseniy Zakharchenko</h1>
-        <h2>Full Stack Developer</h2>
+        <p>Full Stack Developer</p>
         <p>
           I enjoy creating modern and appealing UI using React. Also I provide
           high quality web development services with clean and manageable code
         </p>
-        <Link href='mailto:arseniyboss5@gmail.com'>
-          <Button>Contact Me</Button>
-        </Link>
+        <Button as={Link} href='mailto:arseniyboss5@gmail.com'>
+          Contact Me
+        </Button>
       </InfoSection>
       <HeroImage src='/hero.png' alt='' height={279} width={514} priority />
     </Container>

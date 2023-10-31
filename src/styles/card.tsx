@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 import Image from 'next/image'
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--spacing);

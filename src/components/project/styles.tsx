@@ -13,5 +13,5 @@ export const Container = styled(CardContainer)`
 
 export const ProjectName = styled(CardName)`
   background: white;
-  color: #4e7093;
+  color: #22476d;
 `

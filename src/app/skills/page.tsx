@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <>
       <Heading>Skills</Heading>
-      <Container>
+      <Container aria-label='skills'>
         {skills.map((skill) => (
           <Skill key={skill.id} {...skill} />
         ))}
