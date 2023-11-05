@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
-import { setBodyOverflow } from '@utils/setBodyOverflow'
 import { Container, HeaderLogo, HeaderIconContainer, NavLinks } from './styles'
 
 const Header = () => {
@@ -11,16 +10,13 @@ const Header = () => {
 
   const openMobileNav = () => {
     setIsMobileNavbarOpen(true)
-    setBodyOverflow('hidden')
   }
 
   const closeMobileNav = () => {
     setIsMobileNavbarOpen(false)
-    setBodyOverflow('auto')
   }
-
   return (
-    <Container>
+    <Container $isMobileNavbarOpen={isMobileNavbarOpen}>
       <HeaderLogo>Arseniy</HeaderLogo>
       <HeaderIconContainer
         onClick={isMobileNavbarOpen ? closeMobileNav : openMobileNav}
