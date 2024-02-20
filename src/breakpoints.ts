@@ -1,4 +1,4 @@
 export const breakpoints = {
   mobileNav: '550px',
-  about: '1200px',
+  home: '1200px',
 }

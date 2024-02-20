@@ -11,7 +11,7 @@ export const Container = styled.div`
   flex: inherit;
   padding: 0 5rem;
 
-  @media screen and (max-width: ${breakpoints.about}) {
+  @media screen and (max-width: ${breakpoints.home}) {
     flex: initial;
     flex-direction: column;
     gap: var(--spacing);
@@ -51,7 +51,7 @@ export const Button = styled.button`
     --lightness: 35%;
   }
 
-  @media screen and (max-width: ${breakpoints.about}) {
+  @media screen and (max-width: ${breakpoints.home}) {
     width: 100%;
   }
 `
