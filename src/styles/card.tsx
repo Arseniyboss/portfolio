@@ -11,6 +11,7 @@ export const Container = styled.section`
 `
 
 export const CardContainer = styled.article`
+  box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   overflow: hidden;
 `
