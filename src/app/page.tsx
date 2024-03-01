@@ -20,7 +20,7 @@ const Home = () => {
           Contact Me
         </Button>
       </InfoSection>
-      <HeroImage src='/hero.png' alt='' height={279} width={514} priority />
+      <HeroImage src='/hero.svg' alt='' height={283} width={514} priority />
     </Container>
   )
 }
