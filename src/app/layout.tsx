@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Portfolio',
-  description: 'Portfolio website build with NextJS',
+  description: 'Portfolio website built with NextJS',
 }
 
 const RootLayout = ({ children }: Props) => {
