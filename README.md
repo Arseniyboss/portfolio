@@ -2,7 +2,7 @@
 
 ## Description
 
-Portfolio website build with NextJS
+Portfolio website built with NextJS
 
 ## Technologies
 
