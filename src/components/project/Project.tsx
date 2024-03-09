@@ -7,7 +7,7 @@ const Project = ({ img, url, name }: Props) => {
   return (
     <Link href={url} target='_blank'>
       <Container>
-        <CardImage src={img} alt='' width={468} height={325} priority />
+        <CardImage src={img} alt='' />
         <ProjectName>{name}</ProjectName>
       </Container>
     </Link>

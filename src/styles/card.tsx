@@ -1,7 +1,6 @@
 'use client'
 
 import styled from 'styled-components'
-import Image from 'next/image'
 
 export const Container = styled.section`
   display: grid;
@@ -16,9 +15,10 @@ export const CardContainer = styled.article`
   overflow: hidden;
 `
 
-export const CardImage = styled(Image)`
+export const CardImage = styled.img`
   height: auto;
   width: 100%;
+  aspect-ratio: 1.25;
 `
 
 export const CardName = styled.p`

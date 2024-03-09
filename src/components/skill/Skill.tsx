@@ -4,7 +4,7 @@ import { Container, SkillImage, SkillName } from './styles'
 const Skill = ({ img, name }: Props) => {
   return (
     <Container>
-      <SkillImage src={img} alt='' width={250} height={250} priority />
+      <SkillImage src={img} alt='' />
       <SkillName>{name}</SkillName>
     </Container>
   )
