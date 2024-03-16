@@ -13,8 +13,8 @@ const Projects = () => {
     <>
       <Heading>Projects</Heading>
       <Container aria-label='projects'>
-        {projects.map((project) => (
-          <Project key={project.id} {...project} />
+        {projects.map((project, index) => (
+          <Project key={index} {...project} />
         ))}
       </Container>
     </>

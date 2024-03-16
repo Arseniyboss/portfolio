@@ -1,7 +1,6 @@
 export interface Skill {
-  id: number
-  img: string
   name: string
+  img: string
 }
 
 export interface Project extends Skill {

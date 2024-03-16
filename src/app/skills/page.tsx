@@ -13,8 +13,8 @@ const Skills = () => {
     <>
       <Heading>Skills</Heading>
       <Container aria-label='skills'>
-        {skills.map((skill) => (
-          <Skill key={skill.id} {...skill} />
+        {skills.map((skill, index) => (
+          <Skill key={index} {...skill} />
         ))}
       </Container>
     </>
