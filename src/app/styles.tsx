@@ -43,7 +43,7 @@ export const Button = styled.button`
   color: white;
   text-align: center;
   font-size: 1.2rem;
-  padding: 0.8rem 4rem;
+  padding: 0.8rem 2.5rem;
   border-radius: var(--border-radius);
   transition: all 0.3s ease;
 

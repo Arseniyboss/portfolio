@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Metadata } from 'next'
 import { Container, InfoSection, Button, HeroImage } from './styles'
 
@@ -16,7 +15,7 @@ const Home = () => {
           I enjoy creating modern and appealing UI using React. Also I provide
           high quality web development services with clean and manageable code
         </p>
-        <Button as={Link} href='mailto:arseniyboss5@gmail.com'>
+        <Button as='a' href='mailto:zakharchenkoarsenii2010@gmail.com'>
           Contact Me
         </Button>
       </InfoSection>
