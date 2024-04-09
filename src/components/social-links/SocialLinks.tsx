@@ -1,4 +1,4 @@
-import { IoMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Container } from './styles'
 
 const SocialLinks = () => {
@@ -9,21 +9,21 @@ const SocialLinks = () => {
         target='_self'
         aria-label='mailto link'
       >
-        <IoMail aria-hidden />
+        <FaEnvelope aria-hidden />
       </a>
       <a
         href='https://github.com/Arseniyboss'
         target='_blank'
         aria-label='github link'
       >
-        <IoLogoGithub aria-hidden />
+        <FaGithub aria-hidden />
       </a>
       <a
         href='https://www.linkedin.com/in/arseniy-zakharchenko-97a13a240'
         target='_blank'
         aria-label='linkedin link'
       >
-        <IoLogoLinkedin aria-hidden />
+        <FaLinkedin aria-hidden />
       </a>
     </Container>
   )
