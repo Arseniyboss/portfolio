@@ -14,7 +14,7 @@ export const Container = styled.div`
   @media screen and (max-width: ${breakpoints.home}) {
     flex: initial;
     flex-direction: column;
-    gap: var(--spacing);
+    gap: 1rem;
     padding: var(--spacing);
     padding-bottom: 0;
   }
