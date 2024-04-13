@@ -2,9 +2,9 @@ import { Project } from '@/types'
 
 const projects: Project[] = [
   {
-    name: 'Task Manager',
-    url: 'https://advanced-task-manager.netlify.app',
-    img: '/projects/task-manager.png',
+    name: 'E-Commerce',
+    url: 'https://ebuyshop.vercel.app',
+    img: '/projects/ecommerce.png',
   },
   {
     name: 'Landing Page',
@@ -12,14 +12,14 @@ const projects: Project[] = [
     img: '/projects/landing-page.png',
   },
   {
-    name: 'E-Commerce',
-    url: 'https://ebuyshop.vercel.app',
-    img: '/projects/ecommerce.png',
+    name: 'Task Manager',
+    url: 'https://advanced-task-manager.netlify.app',
+    img: '/projects/task-manager.png',
   },
   {
-    name: 'Food Delivery App',
-    url: 'https://github.com/Arseniyboss/food',
-    img: '/projects/food.png',
+    name: 'CodePen Clone',
+    url: 'https://custom-codepen.netlify.app',
+    img: '/projects/codepen-clone.png',
   },
 ]
 
