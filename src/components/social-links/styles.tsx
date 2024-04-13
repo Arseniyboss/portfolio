@@ -1,7 +1,7 @@
 'use client'
 
 import styled from 'styled-components'
-import { breakpoints } from '@breakpoints'
+import { breakpoints } from '@/breakpoints'
 
 export const Container = styled.div`
   display: flex;

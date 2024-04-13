@@ -1,7 +1,7 @@
 'use client'
 
 import styled from 'styled-components'
-import { CardContainer, CardName } from '@styles/card'
+import { CardContainer, CardName } from '@/styles/card'
 
 export const Container = styled(CardContainer)`
   transition: 0.5s;

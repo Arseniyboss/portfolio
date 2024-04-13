@@ -1,5 +1,5 @@
-import { Project as Props } from '@types'
-import { CardImage } from '@styles/card'
+import { Project as Props } from '@/types'
+import { CardImage } from '@/styles/card'
 import { Container, ProjectName } from './styles'
 
 const Project = ({ img, url, name }: Props) => {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { breakpoints } from '@breakpoints'
-import { InvisibleButton } from '@styles/globals'
+import { breakpoints } from '@/breakpoints'
+import { InvisibleButton } from '@/styles/globals'
 
 type Props = {
   $isMobileNavbarOpen: boolean

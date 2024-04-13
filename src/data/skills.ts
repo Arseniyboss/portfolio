@@ -1,4 +1,4 @@
-import { Skill } from '@types'
+import { Skill } from '@/types'
 
 const skills: Skill[] = [
   { name: 'HTML', img: '/skills/html.svg' },

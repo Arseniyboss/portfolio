@@ -1,4 +1,4 @@
-import { Skill as Props } from '@types'
+import { Skill as Props } from '@/types'
 import { Container, SkillImage, SkillName } from './styles'
 
 const Skill = ({ img, name }: Props) => {
