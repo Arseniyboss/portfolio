@@ -10,6 +10,8 @@ Portfolio website built with NextJS
 - Framework: **NextJS**
 - Styling: **Styled Components**
 
+## Commands
+
 | Command               | Action                                  |
 | --------------------- | --------------------------------------- |
 | npm install           | installs dependencies                   |
