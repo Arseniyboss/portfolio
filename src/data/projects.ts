@@ -8,7 +8,7 @@ const projects: Project[] = [
   },
   {
     name: 'Landing Page',
-    url: 'https://ultra-landing-page-demo.netlify.app',
+    url: 'https://landing-page-boilerplate.netlify.app',
     img: '/projects/landing-page.png',
   },
   {
