@@ -21,6 +21,11 @@ const projects: Project[] = [
     url: 'https://custom-codepen.netlify.app',
     img: '/projects/codepen-clone.png',
   },
+  {
+    name: 'Chat App',
+    url: 'https://general-chat.onrender.com',
+    img: '/projects/chat-app.png',
+  },
 ]
 
 export default projects
