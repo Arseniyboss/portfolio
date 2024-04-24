@@ -26,6 +26,11 @@ const projects: Project[] = [
     url: 'https://general-chat.onrender.com',
     img: '/projects/chat-app.png',
   },
+  {
+    name: 'Gradient Generator',
+    url: 'https://custom-gradient-generator.netlify.app',
+    img: '/projects/gradient-generator.png',
+  },
 ]
 
 export default projects
