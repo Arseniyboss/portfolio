@@ -26,6 +26,11 @@ const projects: Project[] = [
     url: 'https://general-chat.onrender.com',
     img: '/projects/chat-app.png',
   },
+  {
+    name: 'Dashboard',
+    url: 'https://custom-sales-dashboard.netlify.app',
+    img: '/projects/dashboard.png',
+  },
 ]
 
 export default projects
