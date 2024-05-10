@@ -1,10 +1,5 @@
-import { Metadata } from 'next'
 import { Container, InfoSection, Button, HeroImage } from './styles'
 import SocialLinks from '@/components/social-links/SocialLinks'
-
-export const metadata: Metadata = {
-  title: 'Home',
-}
 
 const Home = () => {
   return (
