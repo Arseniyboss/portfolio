@@ -17,10 +17,10 @@ export const Container = styled.header<Props>`
   box-shadow: var(--box-shadow);
   height: var(--header-height);
   z-index: 1;
-`
 
-export const HeaderLogo = styled.p`
-  font-size: 2rem;
+  p {
+    font-size: 2rem;
+  }
 `
 
 export const HeaderIconContainer = styled(InvisibleButton)`
