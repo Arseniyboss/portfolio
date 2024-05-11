@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { useGSAP } from '@gsap/react'
-import { animateHeader, animateNavLinks } from '@/utils/animations'
+import { animateHeader } from '@/utils/animations'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { Container, HeaderIconContainer, NavLinks } from './styles'
 import navLinks from '@/data/navLinks'
@@ -13,7 +13,6 @@ const Header = () => {
 
   const openMobileNav = () => {
     setIsMobileNavbarOpen(true)
-    animateNavLinks()
   }
 
   const closeMobileNav = () => {

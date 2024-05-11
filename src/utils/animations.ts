@@ -1,16 +1,8 @@
 import gsap from 'gsap'
 
-export const animateNavLinks = () => {
-  gsap.fromTo(
-    '.nav-link',
-    { opacity: 0, x: 20 },
-    { opacity: 1, x: 0, stagger: 0.3 }
-  )
-}
-
 export const animateHeader = () => {
   gsap.fromTo('#logo', { x: -20 }, { opacity: 1, x: 0 })
-  animateNavLinks()
+  gsap.fromTo('.nav-link', { x: 20 }, { opacity: 1, x: 0, stagger: 0.3 })
 }
 
 export const animateInfoSection = () => {
