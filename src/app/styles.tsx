@@ -27,6 +27,10 @@ export const InfoSection = styled.section`
   gap: 1.5rem;
   max-width: 500px;
 
+  > * {
+    opacity: 0;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -45,7 +49,7 @@ export const Button = styled.button`
   font-size: 1.2rem;
   padding: 0.8rem 2.5rem;
   border-radius: var(--border-radius);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 
   &:hover {
     --lightness: 35%;
@@ -57,6 +61,8 @@ export const Button = styled.button`
 `
 
 export const HeroImage = styled(Image)`
-  max-width: 85vw;
   height: auto;
+  max-width: 85vw;
+  opacity: 0;
+  scale: 0;
 `

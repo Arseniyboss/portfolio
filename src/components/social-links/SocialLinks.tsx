@@ -8,6 +8,7 @@ const SocialLinks = () => {
         href='mailto:zakharchenkoarsenii2010@gmail.com'
         target='_self'
         aria-label='mailto link'
+        className='social-link'
       >
         <FaEnvelope aria-hidden />
       </a>
@@ -15,6 +16,7 @@ const SocialLinks = () => {
         href='https://github.com/Arseniyboss'
         target='_blank'
         aria-label='github link'
+        className='social-link'
       >
         <FaGithub aria-hidden />
       </a>
@@ -22,6 +24,7 @@ const SocialLinks = () => {
         href='https://www.linkedin.com/in/arseniy-zakharchenko-97a13a240'
         target='_blank'
         aria-label='linkedin link'
+        className='social-link'
       >
         <FaLinkedin aria-hidden />
       </a>

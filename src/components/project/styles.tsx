@@ -4,10 +4,11 @@ import styled from 'styled-components'
 import { CardContainer, CardName } from '@/styles/card'
 
 export const Container = styled(CardContainer)`
-  transition: 0.5s;
+  transition: scale 0.5s;
 
+  &:has(a:focus),
   &:hover {
-    transform: scale(1.05);
+    scale: 1.05;
   }
 `
 

@@ -13,6 +13,8 @@ export const CardContainer = styled.article`
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   overflow: hidden;
+  display: none;
+  opacity: 0;
 `
 
 export const CardImage = styled.img`

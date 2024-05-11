@@ -20,6 +20,7 @@ export const Container = styled.header<Props>`
 
   p {
     font-size: 2rem;
+    opacity: 0;
   }
 `
 
@@ -40,6 +41,10 @@ export const NavLinks = styled.ul<Props>`
   display: flex;
   gap: 1.5rem;
   font-size: 1.2rem;
+
+  li {
+    opacity: 0;
+  }
 
   @media screen and (max-width: ${breakpoints.mobileNav}) {
     text-align: center;
