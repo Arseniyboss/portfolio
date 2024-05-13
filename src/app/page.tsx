@@ -1,14 +1,13 @@
 'use client'
 
 import { useGSAP } from '@gsap/react'
-import { animateInfoSection, animateHeroImage } from '@/utils/animations'
+import { animateHomePage } from '@/utils/animations'
 import { Container, InfoSection, Button, HeroImage } from './styles'
 import SocialLinks from '@/components/social-links/SocialLinks'
 
 const Home = () => {
   useGSAP(() => {
-    animateInfoSection()
-    animateHeroImage()
+    animateHomePage()
   }, [])
   return (
     <Container>
@@ -17,7 +16,7 @@ const Home = () => {
         <p id='subheading'>Full Stack Developer</p>
         <p id='description'>
           I enjoy creating modern and appealing UI using React. Also I provide
-          high quality web development services with clean and manageable code
+          high quality web development services with clean and manageable code.
         </p>
         <Button id='button' as='a' href='/resume.pdf' download>
           Download Resume
