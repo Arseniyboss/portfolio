@@ -31,6 +31,11 @@ const projects: Project[] = [
     url: 'https://custom-sales-dashboard.netlify.app',
     img: '/projects/dashboard.png',
   },
+  {
+    name: '3D iPhone',
+    url: 'https://3d-iphone15.netlify.app',
+    img: '/projects/3d-iphone.png',
+  },
 ]
 
 export default projects

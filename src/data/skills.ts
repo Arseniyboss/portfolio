@@ -11,6 +11,7 @@ const skills: Skill[] = [
   { name: 'Styled Components', img: '/skills/styled-components.svg' },
   { name: 'Tailwind CSS', img: '/skills/tailwindcss.svg' },
   { name: 'GSAP', img: '/skills/gsap.svg' },
+  { name: 'ThreeJS', img: '/skills/threejs.svg' },
   { name: 'NodeJS', img: '/skills/node.svg' },
   { name: 'MongoDB', img: '/skills/mongo.svg' },
   { name: 'Jest', img: '/skills/jest.svg' },
