@@ -15,6 +15,6 @@ export const animateHomePage = () => {
   timeline.to('img', { opacity: 1, scale: 1, duration: 1 })
 }
 
-export const animateCard = (target: string) => {
-  gsap.to(target, { display: 'block', opacity: 1, delay: 0.3, stagger: 0.5 })
+export const animateCard = () => {
+  gsap.to('.card', { display: 'block', opacity: 1, delay: 0.3, stagger: 0.5 })
 }

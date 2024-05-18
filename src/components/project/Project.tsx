@@ -8,11 +8,11 @@ import { Container, ProjectName } from './styles'
 
 const Project = ({ img, url, name }: Props) => {
   useGSAP(() => {
-    animateCard('.project')
+    animateCard()
   }, [])
   return (
-    <a href={url} target='_blank' aria-label={name}>
-      <Container className='project'>
+    <a href={url} target='_blank' className='card'>
+      <Container>
         <CardImage src={img} alt='' />
         <ProjectName>{name}</ProjectName>
       </Container>

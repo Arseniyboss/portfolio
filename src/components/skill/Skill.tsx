@@ -7,10 +7,10 @@ import { Container, SkillImage, SkillName } from './styles'
 
 const Skill = ({ img, name }: Props) => {
   useGSAP(() => {
-    animateCard('.skill')
+    animateCard()
   }, [])
   return (
-    <Container className='skill'>
+    <Container className='card'>
       <SkillImage src={img} alt='' />
       <SkillName>{name}</SkillName>
     </Container>
