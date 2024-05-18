@@ -11,12 +11,12 @@ const Project = ({ img, url, name }: Props) => {
     animateCard('.project')
   }, [])
   return (
-    <Container className='project'>
-      <a href={url} target='_blank'>
+    <a href={url} target='_blank' aria-label={name}>
+      <Container className='project'>
         <CardImage src={img} alt='' />
         <ProjectName>{name}</ProjectName>
-      </a>
-    </Container>
+      </Container>
+    </a>
   )
 }
 

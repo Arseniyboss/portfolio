@@ -6,7 +6,6 @@ import { CardContainer, CardName } from '@/styles/card'
 export const Container = styled(CardContainer)`
   transition: scale 0.5s;
 
-  &:has(a:focus),
   &:hover {
     scale: 1.05;
   }

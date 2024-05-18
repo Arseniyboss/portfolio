@@ -36,6 +36,11 @@ const projects: Project[] = [
     url: 'https://3d-iphone15.netlify.app',
     img: '/projects/3d-iphone.png',
   },
+  {
+    name: '3D Globe',
+    url: 'https://3d-earth-globe.netlify.app',
+    img: '/projects/3d-globe.png',
+  },
 ]
 
 export default projects

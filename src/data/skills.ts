@@ -17,7 +17,6 @@ const skills: Skill[] = [
   { name: 'Jest', img: '/skills/jest.svg' },
   { name: 'Cypress', img: '/skills/cypress.svg' },
   { name: 'Git', img: '/skills/git.svg' },
-  { name: 'Jira', img: '/skills/jira.svg' },
 ]
 
 export default skills
