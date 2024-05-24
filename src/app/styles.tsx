@@ -1,7 +1,6 @@
 'use client'
 
 import styled from 'styled-components'
-import Image from 'next/image'
 import { breakpoints } from '@/breakpoints'
 
 export const Container = styled.div`
@@ -60,9 +59,13 @@ export const Button = styled.button`
   }
 `
 
-export const HeroImage = styled(Image)`
-  height: auto;
-  max-width: 85vw;
-  opacity: 0;
-  scale: 0;
+export const CanvasContainer = styled.div`
+  padding: 0.5rem;
+  width: 480px;
+  height: 380px;
+
+  @media screen and (max-width: 530px) {
+    width: 80vw;
+    height: 60vw;
+  }
 `
