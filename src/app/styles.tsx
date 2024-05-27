@@ -58,14 +58,3 @@ export const Button = styled.button`
     width: 100%;
   }
 `
-
-export const CanvasContainer = styled.div`
-  padding: 0.5rem;
-  width: 480px;
-  height: 380px;
-
-  @media screen and (max-width: 530px) {
-    width: 80vw;
-    height: 60vw;
-  }
-`

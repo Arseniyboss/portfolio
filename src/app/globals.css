@@ -38,6 +38,14 @@ img {
   display: block;
 }
 
+iframe {
+  border: none;
+  height: 340px;
+  max-height: 70vw;
+  max-width: 80vw;
+  opacity: 0;
+}
+
 .card {
   display: none;
   opacity: 0;

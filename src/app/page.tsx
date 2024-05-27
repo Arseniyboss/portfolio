@@ -1,12 +1,10 @@
 'use client'
 
-import { Canvas } from '@react-three/fiber'
 import { useGSAP } from '@gsap/react'
 import { animateHomePage } from '@/utils/animations'
-import { shapes } from '@/data/shapes'
-import { Container, InfoSection, Button, CanvasContainer } from './styles'
+import { Container, InfoSection, Button } from './styles'
 import SocialLinks from '@/components/social-links/SocialLinks'
-import Shape from '@/components/Shape'
+import WobblySphere from '@/components/WobblySphere'
 
 const Home = () => {
   useGSAP(() => {
@@ -26,13 +24,7 @@ const Home = () => {
         </Button>
         <SocialLinks />
       </InfoSection>
-      <CanvasContainer>
-        <Canvas>
-          {shapes.map((shape, index) => (
-            <Shape key={index} {...shape} />
-          ))}
-        </Canvas>
-      </CanvasContainer>
+      <WobblySphere />
     </Container>
   )
 }
