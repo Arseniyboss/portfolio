@@ -8,8 +8,8 @@ export const animateHeader = () => {
 export const animateHomePage = () => {
   const timeline = gsap.timeline()
   timeline.fromTo('#heading', { y: -20 }, { opacity: 1, y: 0 })
-  timeline.fromTo('#subheading', { x: -20 }, { opacity: 1, x: 0 })
-  timeline.fromTo('#description', { x: 20 }, { opacity: 1, x: 0 })
+  timeline.fromTo('#role', { x: -20 }, { opacity: 1, x: 0 })
+  timeline.fromTo('#summary', { x: 20 }, { opacity: 1, x: 0 })
   timeline.fromTo('#button', { y: 20 }, { opacity: 1, y: 0 })
   timeline.to('.social-link', { opacity: 1, stagger: 0.1 })
   timeline.to('#wobbly-sphere', { opacity: 1 })
