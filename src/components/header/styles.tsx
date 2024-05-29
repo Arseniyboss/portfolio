@@ -3,7 +3,7 @@ import { breakpoints } from '@/breakpoints'
 import { InvisibleButton } from '@/styles/globals'
 
 type Props = {
-  $isMobileNavbarOpen: boolean
+  $isMobileNavOpen: boolean
 }
 
 export const Container = styled.header<Props>`
@@ -20,7 +20,6 @@ export const Container = styled.header<Props>`
 
   p {
     font-size: 2rem;
-    opacity: 0;
   }
 `
 
@@ -42,10 +41,6 @@ export const NavLinks = styled.ul<Props>`
   gap: 1.5rem;
   font-size: 1.2rem;
 
-  li {
-    opacity: 0;
-  }
-
   @media screen and (max-width: ${breakpoints.mobileNav}) {
     text-align: center;
     flex-direction: column;
@@ -57,6 +52,6 @@ export const NavLinks = styled.ul<Props>`
     height: calc(100vh - (var(--header-height)));
     top: var(--header-height);
     background: var(--background);
-    display: ${({ $isMobileNavbarOpen }) => !$isMobileNavbarOpen && 'none'};
+    display: ${({ $isMobileNavOpen }) => !$isMobileNavOpen && 'none'};
   }
 `

@@ -8,12 +8,12 @@
   --background: #101522;
   --border-radius: 0.25rem;
   --spacing: 2rem;
-  --box-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
+  --box-shadow: 0 0 0.5rem black;
   --header-height: 80px;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   color: white;
@@ -36,14 +36,6 @@ button {
 
 img {
   display: block;
-}
-
-iframe {
-  border: none;
-  height: 340px;
-  max-height: 70vw;
-  max-width: 80vw;
-  opacity: 0;
 }
 
 .card {

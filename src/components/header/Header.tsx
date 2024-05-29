@@ -2,45 +2,31 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { useGSAP } from '@gsap/react'
-import { animateHeader } from '@/utils/animations'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { Container, HeaderIconContainer, NavLinks } from './styles'
 import navLinks from '@/data/navLinks'
 
 const Header = () => {
-  const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false)
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
-  const openMobileNav = () => {
-    setIsMobileNavbarOpen(true)
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen)
   }
-
-  const closeMobileNav = () => {
-    setIsMobileNavbarOpen(false)
-  }
-
-  useGSAP(() => {
-    animateHeader()
-  }, [])
   return (
-    <Container $isMobileNavbarOpen={isMobileNavbarOpen}>
-      <p id='logo'>Arseniy</p>
+    <Container $isMobileNavOpen={isMobileNavOpen}>
+      <p>Arseniy</p>
       <HeaderIconContainer
-        onClick={isMobileNavbarOpen ? closeMobileNav : openMobileNav}
-        aria-expanded={isMobileNavbarOpen}
-        aria-label={
-          isMobileNavbarOpen
-            ? 'close mobile navigation'
-            : 'open mobile navigation'
-        }
+        onClick={toggleMobileNav}
+        aria-expanded={isMobileNavOpen}
+        aria-label='toggle mobile navigation'
       >
-        {isMobileNavbarOpen ? <FaTimes /> : <FaBars />}
+        {isMobileNavOpen ? <FaTimes /> : <FaBars />}
       </HeaderIconContainer>
       <nav>
-        <NavLinks $isMobileNavbarOpen={isMobileNavbarOpen}>
+        <NavLinks $isMobileNavOpen={isMobileNavOpen}>
           {navLinks.map((link) => (
-            <li key={link.id} className='nav-link'>
-              <Link href={link.href} onClick={closeMobileNav}>
+            <li key={link.id}>
+              <Link href={link.href} onClick={toggleMobileNav}>
                 {link.label}
               </Link>
             </li>

@@ -13,7 +13,6 @@ export const Container = styled.div`
   @media screen and (max-width: ${breakpoints.home}) {
     flex: initial;
     flex-direction: column;
-    gap: 1rem;
     padding: var(--spacing);
     padding-bottom: 0;
   }
@@ -57,4 +56,12 @@ export const Button = styled.button`
   @media screen and (max-width: ${breakpoints.home}) {
     width: 100%;
   }
+`
+
+export const Video = styled.video`
+  display: none;
+  scale: 0;
+  height: 320px;
+  max-height: 70vw;
+  max-width: 80vw;
 `
