@@ -37,9 +37,9 @@ const projects: Project[] = [
     img: '/projects/3d-iphone.png',
   },
   {
-    name: '3D Globe',
-    url: 'https://3d-earth-globe.netlify.app',
-    img: '/projects/3d-globe.png',
+    name: 'Memory Game',
+    url: 'https://card-matching-memory-game.netlify.app',
+    img: '/projects/memory-game.png',
   },
 ]
 
