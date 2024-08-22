@@ -21,7 +21,7 @@ const SocialLinks = () => {
         <FaGithub aria-hidden />
       </a>
       <a
-        href='https://www.linkedin.com/in/arseniy-zakharchenko-97a13a240'
+        href='https://www.linkedin.com/in/arseniy-zakharchenko'
         target='_blank'
         aria-label='linkedin link'
         className='social-link'
