@@ -9,20 +9,16 @@ import navLinks from '@/data/navLinks'
 const Header = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
-  const openMobileNav = () => {
-    setIsMobileNavOpen(true)
-  }
-
-  const closeMobileNav = () => {
-    setIsMobileNavOpen(false)
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen)
   }
   return (
-    <Container $isMobileNavOpen={isMobileNavOpen}>
+    <Container>
       <p>Arseniy</p>
       <HeaderIconContainer
-        onClick={isMobileNavOpen ? closeMobileNav : openMobileNav}
+        onClick={toggleMobileNav}
         aria-expanded={isMobileNavOpen}
-        aria-label='toggle mobile navigation'
+        aria-label={`${isMobileNavOpen ? 'close' : 'open'} mobile navigation`}
       >
         {isMobileNavOpen ? <FaTimes /> : <FaBars />}
       </HeaderIconContainer>
@@ -30,7 +26,7 @@ const Header = () => {
         <NavLinks $isMobileNavOpen={isMobileNavOpen}>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <Link href={link.href} onClick={closeMobileNav}>
+              <Link href={link.href} onClick={toggleMobileNav}>
                 {link.label}
               </Link>
             </li>

@@ -6,7 +6,7 @@ type Props = {
   $isMobileNavOpen: boolean
 }
 
-export const Container = styled.header<Props>`
+export const Container = styled.header`
   background: var(--background);
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,6 @@ export const HeaderIconContainer = styled(InvisibleButton)`
     align-items: center;
     right: var(--spacing);
     font-size: 1.8rem;
-    cursor: pointer;
   }
 `
 
