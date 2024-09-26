@@ -8,6 +8,7 @@ type Props = {
 
 export const Container = styled.header`
   background: var(--background);
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
