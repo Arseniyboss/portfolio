@@ -15,12 +15,6 @@ export const CardContainer = styled.article`
   overflow: hidden;
 `
 
-export const CardImage = styled.img`
-  height: auto;
-  width: 100%;
-  aspect-ratio: 1.5;
-`
-
 export const CardName = styled.p`
   text-align: center;
   font-weight: bold;
