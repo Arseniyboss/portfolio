@@ -1,9 +1,9 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { Container } from './styles'
+import { LinkWrapper } from './styles'
 
 const SocialLinks = () => {
   return (
-    <Container>
+    <LinkWrapper>
       <a
         href='mailto:zakharchenkoarsenii2010@gmail.com'
         target='_self'
@@ -28,7 +28,7 @@ const SocialLinks = () => {
       >
         <FaLinkedin aria-hidden />
       </a>
-    </Container>
+    </LinkWrapper>
   )
 }
 

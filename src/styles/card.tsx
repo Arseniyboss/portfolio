@@ -2,7 +2,7 @@
 
 import styled from 'styled-components'
 
-export const Container = styled.section`
+export const CardWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--spacing);

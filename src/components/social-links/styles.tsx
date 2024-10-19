@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 import { breakpoints } from '@/breakpoints'
 
-export const Container = styled.div`
+export const LinkWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
