@@ -17,6 +17,11 @@ const projects: Project[] = [
     img: '/projects/task-manager.png',
   },
   {
+    name: 'Project Manager',
+    url: 'https://basic-project-manager.netlify.app',
+    img: '/projects/project-manager.png',
+  },
+  {
     name: 'CodePen Clone',
     url: 'https://custom-codepen.netlify.app',
     img: '/projects/codepen-clone.png',
