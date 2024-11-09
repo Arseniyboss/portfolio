@@ -11,5 +11,5 @@ export const animateHomePage = () => {
 }
 
 export const animateCard = () => {
-  gsap.to('.card', { display: 'initial', opacity: 1, delay: 0.8, stagger: 0.5 })
+  gsap.to('.card', { display: 'initial', opacity: 1, delay: 0.5, stagger: 0.5 })
 }
