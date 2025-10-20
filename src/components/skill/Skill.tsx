@@ -3,16 +3,17 @@
 import { useGSAP } from '@gsap/react'
 import { animateCard } from '@/utils/animations'
 import { Skill as Props } from '@/types'
-import { Container, SkillImage, SkillName } from './styles'
+import { CardName } from '@/styles/card'
+import { Container } from './styles'
 
 const Skill = ({ img, name }: Props) => {
   useGSAP(() => {
     animateCard()
   }, [])
   return (
-    <Container className='card'>
-      <SkillImage src={img} alt='' />
-      <SkillName>{name}</SkillName>
+    <Container className="card">
+      <img src={img} alt="" />
+      <CardName>{name}</CardName>
     </Container>
   )
 }
