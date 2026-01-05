@@ -21,7 +21,7 @@ const Project = ({ img, url, name }: Props) => {
   return (
     <a href={url} target="_blank" className="card">
       <Container>
-        <Image src={img} alt="" width={750} height={500} onLoad={handleLoad} priority />
+        <Image src={img} alt="" width={750} height={500} onLoad={handleLoad} preload />
         <ProjectName>{name}</ProjectName>
       </Container>
     </a>
