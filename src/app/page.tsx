@@ -14,7 +14,7 @@ const Home = () => {
       <InfoSection aria-label='info section'>
         <h1>Hi! I am Arseniy Zakharchenko</h1>
         <p id='role'>Frontend Developer</p>
-        <p id='summary'>I enjoy creating visually appealing user interfaces.</p>
+        <p id='summary'>I create visually appealing user interfaces.</p>
         <Button id='button' as='a' href='/resume.pdf' download>
           Download Resume
         </Button>
