@@ -1,14 +1,30 @@
 'use client'
 
+import { useRef, useEffect } from 'react'
 import { useGSAP } from '@gsap/react'
 import { animateHomePage } from '@/utils/animations'
 import { Container, InfoSection, Button, Video } from './styles'
 import SocialLinks from '@/components/social-links/SocialLinks'
 
 const Home = () => {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
   useGSAP(() => {
     animateHomePage()
   }, [])
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+    const handlePause = () => {
+      if (!video.paused) return
+      video.play().catch(() => {})
+    }
+    video.addEventListener('pause', handlePause)
+    return () => {
+      video.removeEventListener('pause', handlePause)
+    }
+  }, [videoRef])
   return (
     <Container>
       <InfoSection aria-label='info section'>
@@ -20,7 +36,7 @@ const Home = () => {
         </Button>
         <SocialLinks />
       </InfoSection>
-      <Video src='/wobbly-sphere.mp4' autoPlay loop muted playsInline />
+      <Video ref={videoRef} src='/wobbly-sphere.mp4' autoPlay loop muted playsInline />
     </Container>
   )
 }
